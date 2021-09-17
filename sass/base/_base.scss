@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Scope+One&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  // overflow: hidden;
+}
+
+// SELECTED TEXT
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+// HEADER SECTION
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(126, 213, 111, 0.6),
+        rgba(40, 180, 133, 0.6)
+      ),
+      url(../../asset/head-img-land.jpg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+  }
+
+  &__content {
+    margin-bottom: 10rem;
+  }
+}
+
+// ABOUT SECTION
+.about {
+  height: 90vh;
+  background-color: $color-white;
+  color: $color-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 8.5rem;
+  text-align: left;
+  width: 100%;
+
+  &__heading {
+    align-self: flex-start;
+    color: $color-primary;
+    margin-bottom: 5rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    &-heading {
+      margin-bottom: 2rem;
+    }
+
+    &-details {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// SERVICES SECTION
+.services {
+  background-color: $color-grey;
+  height: 90vh;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+// ACHIEVEMENTS SECTION
+.achievements {
+  height: 90vh;
+  flex-direction: column;
+  padding: 5rem 0;
+
+  &,
+  &__card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__card-container {
+    margin: 10rem 0 0;
+  }
+}
